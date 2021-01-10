@@ -1,0 +1,144 @@
+@font-face{
+    font-family: karla;
+    src: url("static/Karla-Regular.ttf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: karla;
+    src: url("static/Karla-Bold.ttf");
+    font-weight: 700;
+}
+html, body{
+    width: 100%;
+    height: auto;
+}
+body{
+    font-family: karla;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.flexBox{
+    margin: 10% 0 10% 0;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 15px 1px hsl(218, 22%, 67%);
+}
+
+.flexItem{
+    padding: 1.5rem;
+}
+.head{
+    flex-basis: 100%;
+
+    background-color: white;
+}
+.head h2{
+    color: hsl(179, 62%, 43%);
+}
+
+.head h3{
+    color: hsl(71, 73%, 54%);
+}
+.head p{
+    color: hsl(218, 22%, 67%);
+}
+
+.fee, .benefits{
+    max-height: 11rem;
+}
+.fee{
+    display: flex;
+    flex-basis: 15rem;  
+    flex-wrap: wrap;
+    background-color:hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+}
+.fee h3, p{
+    margin-top: 0;
+    flex-basis: 100%;
+}
+
+.fee h1{
+    margin: 0;
+    width: fit-content;
+ }
+.fee span{
+    color: hsl(0, 0%, 91%);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+ }
+.fee p{
+    margin-top: 1rem;
+ }
+.button{
+    text-decoration: none;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0.3rem;
+    text-align: center;
+    padding-top: 1rem;
+    vertical-align: middle;
+    flex-basis: 100%;
+    height: 2rem;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 3px 2px 0px rgba(53, 53, 53, 0.2);
+
+}
+.button:hover{
+    transition: 400ms;
+    background-color: hsl(71, 77%, 46%);
+}
+.benefits{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15rem;
+    background-color:  hsl(179, 41%, 52%);
+    color: hsl(204, 43%, 93%);
+}
+
+.benefits h3{
+    margin-top: 0;
+}
+.benefits p{
+    font-size: small;
+    width: 80%;
+    height: 1rem;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 768px){
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        padding: 0;
+    }
+    .flexBox{
+        margin: 5% 0 5% 0;
+        width: 40rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0px 4px 15px 1px hsl(218, 22%, 67%);
+    }
+    .flexItem{
+        padding: 2.5rem;
+    }
+    .fee, .benefits{
+        max-height: 11rem;
+    }
+}
